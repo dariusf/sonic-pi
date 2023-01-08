@@ -68,7 +68,7 @@ SonicPiScintilla::SonicPiScintilla(SonicPiLexer *lexer, SonicPiTheme *theme, QSt
 
   addKeyBinding(settings, QsciCommand::WordRight, Qt::Key_F | SPi_META);
   addOtherKeyBinding(settings, QsciCommand::WordRight, Qt::Key_Right | SPi_CTRL);
-  addKeyBinding(settings, QsciCommand::WordRightExtend, Qt::Key_Right | SPi_CTRL | Qt::SHIFT);
+  addKeyBinding(settings, QsciCommand::WordRightExtend, Qt::Key_Right | Qt::ALT | Qt::SHIFT);
 
   addKeyBinding(settings, QsciCommand::CharLeft, Qt::Key_B | SPi_CTRL);
   addOtherKeyBinding(settings, QsciCommand::CharLeft, Qt::Key_Left);
@@ -76,7 +76,7 @@ SonicPiScintilla::SonicPiScintilla(SonicPiLexer *lexer, SonicPiTheme *theme, QSt
 
   addKeyBinding(settings, QsciCommand::WordLeft, Qt::Key_B | SPi_META);
   addOtherKeyBinding(settings, QsciCommand::WordLeft, Qt::Key_Left | SPi_CTRL);
-  addKeyBinding(settings, QsciCommand::WordLeftExtend, Qt::Key_Left | SPi_CTRL | Qt::SHIFT);
+  addKeyBinding(settings, QsciCommand::WordLeftExtend, Qt::Key_Left | Qt::ALT | Qt::SHIFT);
 
   addKeyBinding(settings, QsciCommand::Delete, Qt::Key_D | SPi_CTRL);
   addOtherKeyBinding(settings, QsciCommand::Delete, Qt::Key_Delete);
