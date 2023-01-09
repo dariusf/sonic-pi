@@ -1242,7 +1242,7 @@ void MainWindow::splashClose()
 
 void MainWindow::showWindow()
 {
-    if (gui_settings->value("first_time", 1).toInt() == 1)
+    if (true || gui_settings->value("first_time", 1).toInt() == 1)
     {
         showMaximized();
     }
